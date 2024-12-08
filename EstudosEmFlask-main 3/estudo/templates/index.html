@@ -12,6 +12,9 @@
     <ul>
         {% for item in itens %}
         <li>{{ item }}</li>
+        <form method="POST" action="/delete/{{loop.index0}}" style="display:inline;">
+            <button type="submit"> Excluir</button>
+        </form>
         {% endfor %}
     </ul>
 
